@@ -1,0 +1,36 @@
+$footer-logo-size: 20rem;
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #000000;
+
+    & .footer__logo {
+        width: $footer-logo-size;
+        height: $footer-logo-size;
+        justify-self: center;
+    }
+
+    & .footer__social {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-block: 2rem;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        & .footer__social-item {
+            color: #ffffff;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            &>img {
+                margin-right: 0.5rem;
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+    }
+}

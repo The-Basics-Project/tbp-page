@@ -1,0 +1,26 @@
+.navbar {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto 1fr auto;
+    padding: 0 4rem;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+
+    & .navbar__logo {
+        justify-self: start;
+        width: 10vh;
+        height: 10vh;
+    }
+
+    & .navbar__items {
+        display: flex;
+        grid-column-start: 3;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        &>span {
+            margin-inline: 0.5rem;
+        }
+    }
+}

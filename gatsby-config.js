@@ -1,16 +1,23 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "the-basics-project",
+    siteUrl: 'https://www.thebasicsproject.com',
+    title: 'the-basics-project',
   },
   plugins: [
-    "gatsby-plugin-sass",
+    'gatsby-plugin-sass',
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: "G-XB9CMXQPHZ",
+        trackingId: 'G-XB9CMXQPHZ',
       },
     },
-    "gatsby-plugin-react-helmet",
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'socialImages',
+        path: `${__dirname}/src/images/social`,
+      },
+    },
+    'gatsby-plugin-react-helmet',
   ],
 };
