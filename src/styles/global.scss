@@ -1,3 +1,15 @@
+.wf-loading * {
+  opacity: 0;
+}
+
+.wf-active *, 
+.wf-inactive * {
+	-webkit-transition: opacity 750ms ease-out;  
+	-moz-transition: opacity 750ms ease-out; 
+	-o-transition: opacity 750ms ease-out;  
+	transition: opacity 750ms ease-out;  
+}
+
 body, html {
     margin: 0;
     background-color: #eeeeee;
