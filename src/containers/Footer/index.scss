@@ -5,6 +5,10 @@ $footer-logo-size: 20rem;
     align-items: center;
     justify-content: space-around;
     background-color: #000000;
+    flex-direction: column;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
 
     & .footer__logo {
         width: $footer-logo-size;
@@ -30,6 +34,14 @@ $footer-logo-size: 20rem;
                 margin-right: 0.5rem;
                 width: 3rem;
                 height: 3rem;
+            }
+
+            &>a {
+                color: #ffffff;
+                text-decoration: none;
+                &:hover {
+                    color: #dddddd;
+                }
             }
         }
     }

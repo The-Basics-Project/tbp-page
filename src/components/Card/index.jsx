@@ -9,7 +9,9 @@ function Card({
 }) {
   return (
     <div className="card">
-      <img src={image.src} alt={image.alt} />
+      <div className="card__image">
+        <img src={image.src} alt={image.alt} />
+      </div>
       <span>{title}</span>
     </div>
   );

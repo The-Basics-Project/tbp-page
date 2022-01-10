@@ -1,7 +1,10 @@
 import React from 'react';
-import Card from '../../components/Card';
-import { MISSION_STATEMENT_BODY } from './constants';
+
 import './index.scss';
+import { FOCUS_AREAS_LIST, MISSION_STATEMENT_BODY } from './constants';
+
+import Card from '../../components/Card';
+import missionStatementImage from '../../images/mission-statement.jpg';
 
 function MainSection() {
   return (
@@ -12,19 +15,18 @@ function MainSection() {
           <h1>OUR MISSION</h1>
           <p>{MISSION_STATEMENT_BODY}</p>
         </div>
-        <img className="mission-statement__image" src="https://images.unsplash.com/photo-1576361181962-701d5694bfbf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3576&q=80" alt="Text" />
+        <img className="mission-statement__image" src={missionStatementImage} alt="Text" />
       </div>
       <div className="focus-area">
         <h1>FOCUS AREAS</h1>
         <div className="focus-area__grid">
           {
-            Array(4).fill(<Card
-              image={{
-                src: 'https://images.unsplash.com/photo-1628717341663-0007b0ee2597?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80',
-                alt: 'Hunger',
-              }}
-              title="HUNGER ERADICATION"
-            />)
+            FOCUS_AREAS_LIST.map((item) => (
+              <Card
+                image={item.image}
+                title={item.title}
+              />
+            ))
           }
         </div>
       </div>

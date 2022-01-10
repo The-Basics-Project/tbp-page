@@ -1,15 +1,18 @@
 .navbar {
     box-sizing: border-box;
     display: grid;
+    position: sticky;
+    height: 4rem;
+    top: 0;
+    background-color: #ffffff;
     grid-template-rows: 1fr;
     grid-template-columns: auto 1fr auto;
+    align-items: center;
     padding: 0 4rem;
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 
     & .navbar__logo {
-        justify-self: start;
-        width: 10vh;
-        height: 10vh;
+        height: 2.5rem;
     }
 
     & .navbar__items {
@@ -18,8 +21,18 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            display: initial;
+        }
 
         &>span {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 103.8%;
+            letter-spacing: -0.055rem;
             margin-inline: 0.5rem;
         }
     }
