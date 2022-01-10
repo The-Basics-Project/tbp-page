@@ -9,7 +9,7 @@
     grid-template-rows: 1fr;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    padding: 0 4rem;
+    padding: 0 2rem;
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 
     & .navbar__logo {
@@ -28,13 +28,18 @@
             display: initial;
         }
 
-        &>span {
+        &>a {
             font-style: normal;
             font-weight: 700;
             font-size: 24px;
             line-height: 103.8%;
             letter-spacing: -0.055rem;
             margin-inline: 0.5rem;
+            text-decoration: none;
+            color: #000;
+            &:hover {
+                color: #444444;
+            }
         }
     }
 }

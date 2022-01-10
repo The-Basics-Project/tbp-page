@@ -9,6 +9,7 @@ import missionStatementImage from '../../images/mission-statement.jpg';
 function MainSection() {
   return (
     <div className="main-section">
+      <span className="fragment-anchor" id="our-mission" />
       <div className="mission-statement">
         <div className="mission-statement__content">
           <div className="line" />
@@ -17,6 +18,7 @@ function MainSection() {
         </div>
         <img className="mission-statement__image" src={missionStatementImage} alt="Text" />
       </div>
+      <span className="fragment-anchor" id="focus-areas" />
       <div className="focus-area">
         <h1>FOCUS AREAS</h1>
         <div className="focus-area__grid">
@@ -30,6 +32,7 @@ function MainSection() {
           }
         </div>
       </div>
+      <span className="fragment-anchor" id="impact" />
       <div className="impact">
         <h1>IMPACT</h1>
         <div className="impact__grid">
