@@ -1,9 +1,10 @@
-.wf-loading * {
+html * {
   opacity: 0;
 }
 
-.wf-active *, 
-.wf-inactive * {
+html.wf-active *, 
+html.wf-inactive * {
+  opacity: 1;
 	-webkit-transition: opacity 750ms ease-out;  
 	-moz-transition: opacity 750ms ease-out; 
 	-o-transition: opacity 750ms ease-out;  
@@ -14,6 +15,6 @@ body, html {
     margin: 0;
     background-color: #eeeeee;
     color: #111;
-    font-family: Archivo;
+    font-family: sans-serif;
     letter-spacing: -0.055rem;
 }
