@@ -13,10 +13,15 @@
         position: relative;
         width: 50%;
         max-width: 20rem;
+        min-width: 15rem;
         padding: 2rem;
         background-color: #fff;
         border-radius: 5px;
         text-align: center;
+        
+        & .modal__content > a {
+            text-decoration: none;
+        }
 
         & .modal__close-btn {
             position: absolute;

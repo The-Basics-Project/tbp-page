@@ -23,12 +23,12 @@ function Modal() {
               Email us at
               {' '}
               <a target="_blank" href="mailto:contact.thebasicsproject@gmail.com" rel="noreferrer">
-                <span>contact.thebasicsproject@gmail.com</span>
+                contact.thebasicsproject@gmail.com
               </a>
               {' '}
               or DM us at
               {' '}
-              <a target="_blank" href="https://www.instagram.com/thebasicsproject_/" rel="noreferrer"><span>@thebasicsproject_</span></a>
+              <a target="_blank" href="https://www.instagram.com/thebasicsproject_/" rel="noreferrer">@thebasicsproject_</a>
             </p>
           </div>
         </div>
