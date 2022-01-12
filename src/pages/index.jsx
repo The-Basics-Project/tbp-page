@@ -1,15 +1,12 @@
-import * as React from 'react';
-import Footer from '../containers/Footer';
+import React from 'react';
+import Layout from '../components/Layout';
 import MainSection from '../containers/MainPage';
-import Navbar from '../containers/Navbar';
 
 function IndexPage() {
   return (
-    <main>
-      <Navbar />
+    <Layout>
       <MainSection />
-      <Footer />
-    </main>
+    </Layout>
   );
 }
 

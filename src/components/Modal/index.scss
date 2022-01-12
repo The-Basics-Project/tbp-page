@@ -1,0 +1,31 @@
+.modal {
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #77777799;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .modal__card {
+        position: relative;
+        width: 50%;
+        max-width: 20rem;
+        padding: 2rem;
+        background-color: #fff;
+        border-radius: 5px;
+        text-align: center;
+
+        & .modal__close-btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+            border: none;
+            background-color: transparent;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+    }
+}

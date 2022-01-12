@@ -1,5 +1,40 @@
 .main-section {
 
+    & .hero {
+        height: calc(100vh - 4rem);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-image: url('../../images/hero.jpg');
+        background-size: cover;
+        margin-top: 4rem;
+
+        & .hero__overlay  {
+            grid-column: 1/span 2;
+            width: 100%;
+            height: 100%;
+            background-color: #333333aa;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            @media screen and (min-width: 768px) {
+                grid-column: 2/span 1;
+            }
+        }
+
+        & .hero__content {
+            padding-inline: 10%;
+        }
+
+        & .hero__title {
+            color: #fff;
+            font-size: 4rem;
+            font-weight: 700;
+            margin: 0 0 1rem -4px;
+        }
+    }
+
     & .fragment-anchor::after {
         display: block;
         height: 4rem;
@@ -12,7 +47,6 @@
         grid-template-columns: 1fr;
         align-items: center;
         justify-items: center;
-        margin: 0 0 2rem;
         @media screen and (min-width: 768px) {
             grid-template-columns: 1fr 1fr;
         }
@@ -23,13 +57,14 @@
         }
     
         & .mission-statement__content {
-            padding: 4rem 2rem;
+            padding: 2rem;
             
             @media screen and (min-width: 768px) {
                 width: 50%;
                 min-width: 300px;
             }
             & > p {
+                text-align: justify;
                 font-style: normal;
                 font-weight: 400;
                 letter-spacing: 0;
@@ -37,7 +72,6 @@
         }
     
         & .mission-statement__image {
-            grid-column-start: 2;
             width: 100%;
             height: 50rem;
             object-fit: cover;

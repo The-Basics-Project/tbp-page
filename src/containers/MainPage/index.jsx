@@ -5,21 +5,36 @@ import { FOCUS_AREAS_LIST, MISSION_STATEMENT_BODY } from './constants';
 
 import Card from '../../components/Card';
 import missionStatementImage from '../../images/mission-statement.jpg';
+import CtaButton from '../../components/CTAButton';
 
 function MainSection() {
   return (
     <div className="main-section">
+      <section className="hero">
+        <div className="hero__overlay">
+          <div className="hero__content">
+            <h1 className="hero__title">
+              LEND A
+              {' '}
+              <br />
+              {' '}
+              HELPING HAND
+            </h1>
+            <CtaButton />
+          </div>
+        </div>
+      </section>
       <span className="fragment-anchor" id="our-mission" />
-      <div className="mission-statement">
+      <section className="mission-statement">
         <div className="mission-statement__content">
           <div className="line" />
           <h1>OUR MISSION</h1>
           <p>{MISSION_STATEMENT_BODY}</p>
         </div>
         <img className="mission-statement__image" src={missionStatementImage} alt="Text" />
-      </div>
+      </section>
       <span className="fragment-anchor" id="focus-areas" />
-      <div className="focus-area">
+      <section className="focus-area">
         <h1>FOCUS AREAS</h1>
         <div className="focus-area__grid">
           {
@@ -31,9 +46,9 @@ function MainSection() {
             ))
           }
         </div>
-      </div>
+      </section>
       <span className="fragment-anchor" id="impact" />
-      <div className="impact">
+      <section className="impact">
         <h1>IMPACT</h1>
         <div className="impact__grid">
           {
@@ -48,7 +63,7 @@ function MainSection() {
           ))
         }
         </div>
-      </div>
+      </section>
     </div>
   );
 }
