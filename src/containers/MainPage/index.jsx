@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './index.scss';
-import { FOCUS_AREAS_LIST, MISSION_STATEMENT_BODY } from './constants';
+import { FOCUS_AREAS_LIST, IMPACT_LIST, MISSION_STATEMENT_BODY } from './constants';
 
 import Card from '../../components/Card';
 import missionStatementImage from '../../images/mission-statement.jpg';
@@ -29,7 +29,17 @@ function MainSection() {
         <div className="mission-statement__content">
           <div className="line" />
           <h1>OUR MISSION</h1>
-          <p>{MISSION_STATEMENT_BODY}</p>
+          <h3>
+            UNDERTAKING INITIATIVES FOR THE UNDER-RESOURCED
+          </h3>
+          <p>
+            {MISSION_STATEMENT_BODY.map((string) => (
+              <p>
+                {string}
+              </p>
+            ))}
+
+          </p>
         </div>
         <img className="mission-statement__image" src={missionStatementImage} alt="Text" />
       </section>
@@ -52,10 +62,7 @@ function MainSection() {
         <h1>IMPACT</h1>
         <div className="impact__grid">
           {
-          Array(3).fill({
-            metric: '1800+',
-            description: 'People Served',
-          }).map((impact) => (
+          IMPACT_LIST.map((impact) => (
             <div className="impact__metric">
               <span className="metric">{impact.metric}</span>
               <span className="description">{impact.description}</span>

@@ -23,8 +23,6 @@
         background-color: transparent;
         cursor: pointer;
         display: none;
-        @media screen and (min-width: 1024px) {
-        }
     }
 
     & .navbar__items {
@@ -43,6 +41,11 @@
             letter-spacing: -0.055rem;
             text-decoration: none;
             color: #000;
+
+            &:active {
+                color: #000;
+            }
+
             &:hover {
                 color: #444444;
             }

@@ -49,31 +49,54 @@
         justify-items: center;
         @media screen and (min-width: 768px) {
             grid-template-columns: 1fr 1fr;
+            margin-bottom: 2rem;
         }
     
         & .line {
             width: 5rem;
             border-block-end: 3px solid #333333;
+            display: none;
+            @media screen and (min-width: 768px) {
+                display: block;
+            }
         }
     
         & .mission-statement__content {
-            padding: 2rem;
+            margin: 2rem;
             
             @media screen and (min-width: 768px) {
-                width: 50%;
+                width: 70%;
                 min-width: 300px;
+                max-width: 500px;
             }
+
+            & > h1 {
+                text-align: center;
+                margin-top: 1rem;
+                @media screen and (min-width: 768px) {
+                    text-align: left;
+                }
+            }
+
+            & > h3 {
+                margin-top: 1rem;
+                margin-bottom: 0;
+                line-break: strict;
+                font-size: 1.1rem;
+            }
+
             & > p {
                 text-align: justify;
                 font-style: normal;
                 font-weight: 400;
                 letter-spacing: 0;
+                line-height: 120%;
             }
         }
     
         & .mission-statement__image {
             width: 100%;
-            height: 50rem;
+            height: 100%;
             object-fit: cover;
             display: none;
             @media screen and (min-width: 768px) {
@@ -106,8 +129,8 @@
                 width: 70vw;
                 height: 70vw;
                 @media screen and (min-width: 768px) {
-                    width: 35vw;
-                    height: 35vw;
+                    width: 37vw;
+                    height: 37vw;
                 }
             }
 
@@ -128,24 +151,33 @@
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             grid-auto-rows: auto;
+            justify-items: center;
+            align-items: center;
             @media screen and (min-width: 768px) {
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(2, 1fr);
             }
+            width: 80%;
+            max-width: 925px;
             margin-top: 2rem;
-            gap: 4rem;
 
             & .impact__metric {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                margin-inline: 1.2rem;
+                margin-block: 1rem;
     
                 & .metric {
                     font-weight: 700;
-                    font-size: 4.5rem;
+                    font-size: 5rem;
+                    @media screen and (min-width: 768px) {
+                        font-size: 5rem;
+                    }
                 }
 
                 & .description {
-                    font-size: 2.25rem;
+                    font-size: 1.2rem;
+                    text-align: center;
                 }
             }
         }
