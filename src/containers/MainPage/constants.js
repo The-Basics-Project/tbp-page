@@ -50,7 +50,7 @@ export const IMPACT_LIST = [
   },
   {
     metric: '1400+',
-    description: 'Ration Kits',
+    description: 'Kgs of Ration Supplies',
   },
   {
     metric: '960+',
