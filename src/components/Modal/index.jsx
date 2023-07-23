@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import './index.scss';
 import { ModalContext, MODAL_TYPES } from '../../context/ModalContext';
+import paymentImage from "../../images/qr-payment.jpg";
 
 function Modal() {
   const [showModal, setShowModal] = useContext(ModalContext);
@@ -20,15 +21,8 @@ function Modal() {
 
             </button>
             <p className="modal__content">
-              Email us at
-              {' '}
-              <a target="_blank" href="mailto:contact.thebasicsproject@gmail.com" rel="noreferrer">
-                contact.thebasicsproject@gmail.com
-              </a>
-              {' '}
-              or DM us at
-              {' '}
-              <a target="_blank" href="https://www.instagram.com/thebasicsproject_/" rel="noreferrer">@thebasicsproject_</a>
+              {'Scan and Donate here: '}
+              <img className="modal__image" src={paymentImage} alt="Payment QR Code" />
             </p>
           </div>
         </div>

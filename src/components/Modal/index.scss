@@ -23,6 +23,14 @@
             text-decoration: none;
         }
 
+        & .modal__image {
+            width: 100%;
+            object-fit: contain;
+            border: 2px solid;
+            border-radius: 12px;
+            margin-top: 16px;
+        }
+
         & .modal__close-btn {
             position: absolute;
             right: 0;
