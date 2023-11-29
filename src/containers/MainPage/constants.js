@@ -41,19 +41,19 @@ export const FOCUS_AREAS_LIST = [
 
 export const IMPACT_LIST = [
   {
-    metric: "5100+",
+    metric: "2,00,000",
     description: "People Served",
   },
   {
-    metric: "4400+",
+    metric: "35,000+",
     description: "Cooked Meals",
   },
   {
-    metric: "1400+",
+    metric: "15,000+",
     description: "Kgs of Ration Supplies",
   },
   {
-    metric: "960+",
+    metric: "12,000",
     description: "Sanitary Pads",
   },
 ];

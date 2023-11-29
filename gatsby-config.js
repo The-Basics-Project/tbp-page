@@ -26,6 +26,15 @@ module.exports = {
         path: `${__dirname}/src/images/social`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'The Basics Project Foundation',
+        short_name: 'TBP',
+        start_url: '/',
+        icon: 'src/images/favicon.svg',
+      },
+    },
     'gatsby-plugin-react-helmet',
   ],
 };
