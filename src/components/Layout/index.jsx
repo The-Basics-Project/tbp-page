@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Helmet } from 'react-helmet';
 import Footer from '../../containers/Footer';
 import Navbar from '../../containers/Navbar';
 import Modal from '../Modal';
@@ -10,6 +11,9 @@ function Layout({
 }) {
   return (
     <ModalContextRoot>
+      <Helmet>
+        <title>The Basics Project Foundation: Home</title>
+      </Helmet>
       <main>
         <Navbar />
         {children}
