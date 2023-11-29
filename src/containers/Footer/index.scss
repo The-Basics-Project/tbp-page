@@ -27,11 +27,8 @@ $footer-logo-size: 20rem;
 
         & .footer__social-item {
             color: #ffffff;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: flex-start;
-            &>img {
+            
+            & img {
                 margin-right: 0.5rem;
                 width: 3rem;
                 height: 3rem;
@@ -40,6 +37,10 @@ $footer-logo-size: 20rem;
             &>a {
                 color: #ffffff;
                 text-decoration: none;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
                 &:hover {
                     color: #dddddd;
                 }
