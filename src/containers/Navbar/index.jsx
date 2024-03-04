@@ -9,14 +9,14 @@ const links = [{ name: 'OUR MISSION', link: '#our-mission' }, { name: 'FOCUS ARE
 function Navbar() {
   const [, setShowModal] = useContext(ModalContext);
   return (
-    <div className="navbar">
+    <header className="navbar">
       <img className="navbar__logo" src={logo} alt="The Basics Project Logo" />
-      <div className="navbar__items">
+      <nav className="navbar__items">
         {links.map((link) => (
           <a href={link.link}><span>{link.name}</span></a>
         ))}
         <CtaButton />
-      </div>
+      </nav>
       <button
         type="button"
         className="navbar__menu-icon"
@@ -27,7 +27,7 @@ function Navbar() {
         ☰
 
       </button>
-    </div>
+    </header>
   );
 }
 
