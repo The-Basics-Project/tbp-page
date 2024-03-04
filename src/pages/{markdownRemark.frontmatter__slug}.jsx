@@ -2,6 +2,7 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
+import MarkdownPage from '../containers/MarkdownPage';
 
 export default function MarkdownPageTemplate({
   data,
@@ -10,21 +11,7 @@ export default function MarkdownPageTemplate({
   const { frontmatter, html } = markdownRemark;
   return (
     <Layout>
-      <h1
-        style={{
-          marginInline: 'auto',
-          width: 'fit-content',
-          marginTop: '40px',
-        }}
-      >
-        {frontmatter.title}
-      </h1>
-      <div
-        style={{
-          maxWidth: '100%',
-        }}
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
+      <MarkdownPage title={frontmatter.title} html={html}  />
     </Layout>
   );
 }

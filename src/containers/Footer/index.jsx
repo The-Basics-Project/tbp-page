@@ -1,4 +1,4 @@
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery, Link } from 'gatsby';
 import React from 'react';
 import logoWhite from '../../images/icon-white.svg';
 import './index.scss';
@@ -34,7 +34,13 @@ function Footer() {
   });
   return (
     <div className="footer">
-      <img className="footer__logo" src={logoWhite} alt="The Basics Project Logo" />
+      <div className='footer__left-column'>
+        <img className="footer__logo" src={logoWhite} alt="The Basics Project Logo" />
+        <div className="footer__links">
+          <Link className="link" href="/privacy">Privacy</Link>
+          <Link className="link" href="/terms">Terms</Link>
+        </div>
+      </div>
       <div className="footer__social">
         {socialMediaData.map((data) => (
           <div className="footer__social-item">
