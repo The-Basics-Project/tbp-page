@@ -29,6 +29,18 @@ export default function MarkdownPageTemplate({
   );
 }
 
+export function Head({ data }) {
+  const { markdownRemark } = data;
+  const { frontmatter } = markdownRemark;
+  return (
+    <title>
+      {frontmatter.title}
+      {' '}
+      | The Basics Project Foundation
+    </title>
+  );
+}
+
 export const pageQuery = graphql`
   query($id: String!) {
     markdownRemark(id: { eq: $id }) {
