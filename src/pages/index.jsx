@@ -10,4 +10,8 @@ function IndexPage() {
   );
 }
 
+export function Head() {
+  return <title>Home | The Basics Project Foundation</title>;
+}
+
 export default IndexPage;

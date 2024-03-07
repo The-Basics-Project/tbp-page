@@ -11,10 +11,32 @@ $footer-logo-size: 20rem;
         flex-direction: row;
     }
 
+    & .footer__left-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-block: 32px;
+        gap:32px;
+        height: 100%;
+
+        & .footer__links {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+
+            & .link {
+                color: white;
+                text-decoration: none;
+
+                &:hover {
+                    color: #dddddd;
+                }
+            }
+        }
+    }
+
     & .footer__logo {
         width: $footer-logo-size;
-        height: $footer-logo-size;
-        justify-self: center;
     }
 
     & .footer__social {
