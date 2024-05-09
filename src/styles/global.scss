@@ -31,3 +31,9 @@ body, html {
       margin: 0;
     }
 }
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
