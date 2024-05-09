@@ -39,6 +39,8 @@ function Footer() {
         <div className="footer__links">
           <Link className="link" href="/privacy">Privacy</Link>
           <Link className="link" href="/terms">Terms</Link>
+          <Link className="link" href="/refund-and-return">Refund & Return</Link>
+          <Link className="link" href="/contact-us">Contact Us</Link>
         </div>
       </div>
       <div className="footer__social">
