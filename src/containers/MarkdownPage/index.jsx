@@ -10,7 +10,7 @@ function MarkdownPage({ title, html }) {
         {title}
       </h1>
       <div
-        className='content'
+        className='content container'
         dangerouslySetInnerHTML={{ __html: html }}
       />
     </div>
