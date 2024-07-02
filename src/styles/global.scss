@@ -37,3 +37,14 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+
+.container {
+  max-width: 1360px;
+  margin-inline: 40px;
+
+  @media screen and (min-width: 640px) {
+      margin-inline: auto;
+      width: calc(80% - 40px);
+  }
+}

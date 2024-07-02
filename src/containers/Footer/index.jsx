@@ -33,13 +33,15 @@ function Footer() {
     });
   });
   return (
-    <div className="footer">
+    <div className='footer_wrapper'>
+    <div className="footer container">
       <div className='footer__left-column'>
         <img className="footer__logo" src={logoWhite} alt="The Basics Project Logo" />
         <div className="footer__links">
           <Link className="link" href="/privacy">Privacy</Link>
           <Link className="link" href="/terms">Terms</Link>
           <Link className="link" href="/refund-and-return">Refund & Return</Link>
+          <Link className="link" href="/shipping-policy">Shipping</Link>
           <Link className="link" href="/contact-us">Contact Us</Link>
         </div>
       </div>
@@ -53,7 +55,7 @@ function Footer() {
           </div>
         ))}
       </div>
-    </div>
+    </div></div>
   );
 }
 
